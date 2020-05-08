@@ -1,0 +1,350 @@
+<html>
+    <head><center><img  src="pics/mlogo.jpeg" width="90" height="50"></center>
+        <link rel="stylesheet" href="musichelp.css" type="text/css" media="screen"/>
+        <meta name="description" content="width=device-width, initial-scale=1">
+        
+    <style>
+        div.menu {
+            overflow: hidden;
+            border: none;
+            background-color:black;
+            text-decoration: none;
+            white-space: nowrap;
+            
+            width: 100%;
+            
+        }
+        div.menu a{
+            display: inline-block;
+            color: white;
+            font-size: 18;
+            text-align: center;
+            padding: 25px;
+            text-decoration: none;
+            -webkit-transition:width 1s;
+             transition: height 1s;
+            transition-property: all;
+        }
+        div.menu a:hover{
+           transform: scale(1.5);
+            
+            background-color:transparent;
+            color: red;
+        }
+        
+        
+        
+         input[type=text], input[type=password] {
+  width: 20%;
+  padding: 20px;
+  
+  display:run-in;
+  
+  box-sizing:border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: black;
+  color: white;
+
+  
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  
+    transform: scale(1.5);
+    transition-delay: scale(1);
+            
+            background-color:transparent;
+            color: red;
+    
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  
+  position: relative;
+}
+
+img.avatar {
+  width: 10%;
+ 
+}
+
+.container {
+  padding: 10px 18px;
+}
+
+span.psw {
+    background-color: black;
+    color: white;
+  float:inherit;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+    
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 200%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: white; /* Fallback color */
+  background-color: transparent; /* Black w/ opacity */
+  padding-top: 100px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: white;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 100px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 10%;
+  }
+}
+
+        
+/*blur effect*/
+        .container.blur{
+filter: 'blur(4px)';
+-webkit-filter: 'blur(4px)';
+}
+       
+        
+        </style></head>
+    <body style="background-color:black; background-size: cover; background-repeat: no-repeat; background-position: center">
+        <div class="menu"><center>
+            <a href="home.html">Home  </a> 
+            
+            <a href="#about">Library  </a>
+            
+            <a href="#members">Genres  </a>
+            
+            <a style='align-items: center; float: right; font-size: 21px;' href="#settings">&#128736;</a>
+            
+            <a href="#languages">Languages</a>
+       
+            <a href="#search">Browse</a>
+    
+            <p style="float: left; ;font-size-adjust:18 ; " >
+                <button onclick="document.getElementById('id01').style.display='block'" style="width:20px;">Login</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      
+    </div>
+
+    <div class="container" ><center>
+      <label for="uname" ><b> Username:</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required><br><br>
+
+      <label for="psw"><b> Password:</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required><br>
+        <br>
+        
+      <button type="submit" style="width: 50px;" >Login</button><br>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label></center>
+    </div>
+
+    <div class="container" style="background-color:black">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button><br>
+        <span class="psw"><a href="#asd">forgot password?</a></span><br>
+        <a href="Mregister.html" style="transform: matrixscale(0.5)">Dont have account?</a>
+    </div>
+  </form>
+</div>
+            
+
+<script>
+    
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+</script>
+ 
+                
+                
+</center>
+        </div><br><br>
+        
+        <div class="trndsongs">
+            <a href="#latest"><span></span></a>
+            <br></div>
+         <div class="scrollmenu" style="overflow-x: scroll; overflow-y: hidden;">
+    <a href="ARcollections.html" target="_parent">
+        <img src="ar%20rehman.jpg" style="float: inherit" width="525" height="250"></a>
+    
+    <a href="AJcollection.html" target="_parent">
+        <img src="arjith.jpg" style="float: inherit" width="525" height="250"></a>
+        
+    <a href="ZAYNcolle.html" target="_parent">
+        <img src="zayn.jpg" style="float: inherit" width="525" height="250"></a>
+        
+     <a href="https://www.youtube.com/watch?v=6sDSZwH2EpM" target="_parent">
+        <img src="ar%20rehman.jpg" style="float: inherit" width="525" height="250"></a> 
+        
+    </div>
+        
+    <br>
+        <div class="trndsongs">
+            <a style="font-family: monospace" href="recom"><span>Recomended</span></a><br></div>
+            <div class="scrollmenu">
+    <a href="song1.html" target="_parent">
+        <img src="bellacio.jpg" style="float: inherit" width="200" height="150" ></a>
+    
+    <a href="https://www.youtube.com/watch?v=wFAj0pW6xX0" target="_parent">
+        <img src="ramulo.jpg" style="float: inherit" width="200" height="150"></a>
+        
+    <a href="https://www.youtube.com/watch?v=Eyx0Hvi1_Ng" target="_parent">
+        <img src="emaipoyave.jpg" style="float: inherit" width="200" height="150"></a>
+        
+     <a href="https://www.youtube.com/watch?v=6sDSZwH2EpM" target="_parent">
+        <img src="https://c-sf.smule.com/s-sf-bck1/arr/77/26/fbe831bc-ccaa-4b1b-b4f4-b0c46c0a7254_1024.jpg" style="float: inherit" width="200" height="150"></a>  
+        
+    <a href="https://www.youtube.com/watch?v=qFkNATtc3mc" target="_parent">
+        <img src="https://a10.gaanacdn.com/images/song/8/28097308/crop_175x175_1567659563.jpg" style="float: inherit" width="200" height="150"></a>
+    
+    <a href="https://www.youtube.com/watch?v=91EzD9VgwGk" target="_parent">
+        <img src="https://a10.gaanacdn.com/images/song/88/27967388/crop_175x175_1565942474.jpg" style="float: inherit" width="200" height="150"></a>
+    <a href="https://www.youtube.com/watch?v=ASt6aFJtCDg" target="_parent">
+        <img src="https://a10.gaanacdn.com/images/song/25/26998425/crop_175x175_1559542404.jpg" style="float: inherit" width="200" height="150"></a></div>
+        
+    
+        <br>
+        
+        <div class="trndsongs">
+            <a style="font-family: monospace" href="LH"><span>Latest hindi</span></a><br></div>
+        <div class="scrollmenu">
+    <a href="img,scroll,audio,bcgrnd.html" target="_parent">
+        <img src="bellacio.jpg" style="float: inherit" width="200" height="150" ></a>
+    
+    <a href="https://www.youtube.com/watch?v=wFAj0pW6xX0" target="_parent">
+        <img src="ramulo.jpg" style="float: inherit" width="200" height="150"></a>
+        
+    <a href="https://www.youtube.com/watch?v=Eyx0Hvi1_Ng" target="_parent">
+        <img src="emaipoyave.jpg" style="float: inherit" width="200" height="150"></a>
+        
+     <a href="https://www.youtube.com/watch?v=6sDSZwH2EpM" target="_parent">
+        <img src="https://c-sf.smule.com/s-sf-bck1/arr/77/26/fbe831bc-ccaa-4b1b-b4f4-b0c46c0a7254_1024.jpg" style="float: inherit" width="200" height="150"></a> 
+        
+    <a href="https://www.youtube.com/watch?v=qFkNATtc3mc" target="_parent">
+        <img src="https://a10.gaanacdn.com/images/song/8/28097308/crop_175x175_1567659563.jpg" style="float: inherit" width="200" height="150"></a>
+    
+    <a href="https://www.youtube.com/watch?v=91EzD9VgwGk" target="_parent">
+        <img src="https://a10.gaanacdn.com/images/song/88/27967388/crop_175x175_1565942474.jpg" style="float: inherit" width="200" height="150"></a>
+    <a href="https://www.youtube.com/watch?v=ASt6aFJtCDg" target="_parent">
+        <img src="https://a10.gaanacdn.com/images/song/25/26998425/crop_175x175_1559542404.jpg" style="float: inherit" width="200" height="150"></a></div>
+    <br>
+        
+        <div class="trndsongs">
+            <a style="font-family: monospace" class="LE"><span>Latest english</span></a></div></div>
+</body>
+</html>
+<style>
+div.scrollmenu {
+  background-color: transparent;
+  overflow-y:hidden;
+    overflow-x: visible;
+    
+  white-space: nowrap;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+}
+
+div.scrollmenu a:hover{
+    transform: scale(1.1);
+    transform-style: preserve-3d;
+    
+  display: inline-block; 
+}
+    div.scrollmenu a;hover after{
+        opacity: 3s;
+        
+        background-color: white;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+
+</style>
