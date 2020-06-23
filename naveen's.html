@@ -1,4 +1,5 @@
 <html>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <head>
         <nav class="navbar">
@@ -10,24 +11,47 @@
         </form></head>
     <body style="background-color: black;">
         <center><div class="menu" style="background-color: white; color: black;">
-        <a href="#team" style="font-size: 20px">Team</a>
-        <a href="#team"  style="font-size: 20px">Services</a>
-        <a href="#team"  style="font-size: 20px">Clients</a>
+        <a href="#team" style="font-size: 20px">Bikes</a>
+        <a href="#team"  style="font-size: 20px">Scooters</a>
+        <a href="#team"  style="font-size: 20px">Used bikes</a>
+        <a href="#team"  style="font-size: 20px">Offers</a>
+        <a href="#team"  style="font-size: 20px">Compare</a>
             <a style="font-size: 14px;float: right;padding-bottom: 0px; padding-top: 20px;padding-left: 20px;padding-right: 20px;">P.S Naveen<hr>121710307031</a>
         
             <img src="https://i.pinimg.com/originals/cf/04/bf/cf04bf2b99f3ebfa68f1dcc3b9baa708.jpg" style="width: 80px;height: 80px; float: right">
         
             </div></center>
         
-        <div>
+        <section>
+  <nav1>
+      <ul><center><h1>Categories</h1>
+          <li><b><a href="https://www.bikeexif.com/tag/bmw-cafe-racer" style=" text-decoration-line: none; text-decoration-color: black;">Cafe Racer<img  src="https://www.mobmasker.com/wp-content/uploads/2017/07/Cafe-Racer-Bikes-BMW-12.jpg" style="width: 185px; height: 120px; padding-left: 0;float: left;" ></a></b></li>
+<li>----------------</li>
+    <li><b>
+    <a href="https://www.bikeexif.com/tag/bmw-cafe-racer" style="text-decoration-line: none; text-decoration-color: black;padding: inherit">Cruiser<img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS8KLdR5T0972o-ELzd0IwuPaT53rdqA9_Q-w&usqp=CAU" style="width: 185px; height: 120px; padding-left: 0;float: left;" ></a></b></li>
+          <li>----------------</li>
+          
+     <li><b>
+    <a href="https://www.bikeexif.com/tag/bmw-cafe-racer" style="text-decoration-line: none; text-decoration-color: black;padding: inherit">Sport<img  src="https://cdp.azureedge.net/products/USA/DU/2019/MC/SUPERSPORT/SUPERSPORT_S/50/RED/2000000015.JPG" style="width: 185px; height: 120px; padding-left: 0;float: left;" ></a></b></li>
+          
+
+          </center> </ul>
+  </nav1>
+  
+  <article><div class="container">
+   <center><h1>EXPLORING</h1>
+       <img src="https://www.royalenfield.com/content/dam/royal-enfield/india/motorcycles/himalayan/features/new/desktop/for-a-steadfast-ride.jpg" style="width: 80%;"></center>
+      <div class="content">
+          
+    
+          <p>The older I get, the faster I was. There are old bikers and there are bold bikers, but there are no old, bold bikers</p>
+      
+       </div></div></article></section>
+  
+      
+
         
-        
-        
-        
-        
-        
-        </div>
-        
+       
         
     </body>
 </html>
@@ -59,7 +83,83 @@
             background-color:transparent;
             color: red;
         }
-        
-        
-       
+ ......................
+    
+ * {
+  box-sizing:content-box;
+     
+    }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+
+
+/* Create two columns/boxes that floats next to eac other */
+nav1 {
+  float: left;
+  width: 14%;
+  height: 500px; 
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav1 ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+    
+  padding-left: 20px;
+  padding: 25px;
+  max-width: 80%;
+  background-color: darkgrey;
+  height: 500px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+..............
+    
+.container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+
+.container .content {
+  position: absolute;
+  float: right;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    font-family:cursive;
+  color: #f1f1f1;
+  width: 853px;
+    left: 240px;
+    top: 499px;
+  
+}
+    
+
 </style>
